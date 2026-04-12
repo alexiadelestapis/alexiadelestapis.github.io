@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alexia de Lestapis — Mechanical Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <span class="nav-logo">ADL</span>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="mailto:alexiadelestapis@gmail.com" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge"><span class="pulse"></span>Open to opportunities · Mountain View, CA</div>
+      <h1 class="hero-h1">Alexia<br><em>de Lestapis</em></h1>
+      <p class="hero-role">Mechanical Engineer · Medical Robotics &amp; Biomedical Devices</p>
+      <p class="hero-bio">EPFL-trained mechanical engineer currently at Levita Magnetics — Bay Area surgical robotics. I design hardware that works inside the human body, controls robots at the micron scale, and survives Mars. Equally at home in SolidWorks, Abaqus, and Python.</p>
+      <div class="hero-actions">
+        <a href="https://www.linkedin.com/in/alexia-de-lestapis-61ab93173" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+        <a href="mailto:alexiadelestapis@gmail.com" class="btn-ghost">Email ↗</a>
+        <a href="#projects" class="btn-solid">View Projects →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="sn">6+</span><span class="sl">Projects shipped</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="sn">3</span><span class="sl">Research labs</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="sn">40</span><span class="sl">Engineers led</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="sn">CHF 25k</span><span class="sl">Funding secured</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-label">01 — Projects</div>
+
+    <article class="proj proj-wide" id="levita">
+      <div class="proj-header">
+        <div>
+          <span class="proj-tag current-tag">Current Role</span>
+          <h2 class="proj-title">Next-Gen Laparoscopic Grasper</h2>
+          <p class="proj-org">Levita Magnetics · R&amp;D Engineer · Mountain View, CA · 2026–Present</p>
+        </div>
+        <span class="proj-year">2026</span>
+      </div>
+      <div class="proj-body proj-body-single">
+        <div class="proj-text">
+          <p>Levita's MARS platform lets surgeons perform minimally invasive procedures using external magnets to control internal tools — eliminating one trocar port per surgery. As R&amp;D Engineer I work on the next generation of the laparoscopic grasper: mechanism design and iteration on components that must perform reliably inside the human body while actuated magnetically from outside.</p>
+          <div class="proj-chips">
+            <span>Mechanism Design</span><span>SolidWorks</span><span>Surgical Robotics</span><span>Medical Devices</span><span>Rapid Prototyping</span>
+          </div>
+          <p class="proj-note">⚠ Visuals under NDA — see <a href="https://www.levitamagnetics.com" target="_blank">levitamagnetics.com</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj" id="femur">
+      <div class="proj-header">
+        <div>
+          <span class="proj-tag">Implantable Device · FEA · Surgeon Collaboration</span>
+          <h2 class="proj-title">Minimally Invasive Intramedullary Fracture Device</h2>
+          <p class="proj-org">Laboratory of Biomechanical Orthopedics, EPFL · In collaboration with Dr. Udin, CHUV Hospital · 2025</p>
+        </div>
+        <span class="proj-year">2025</span>
+      </div>
+
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Femoral shaft fractures in elderly osteoporotic patients are typically treated with external nailing requiring 10–14 days of immobilization — highly detrimental for weakened bone. Working directly with a CHUV surgeon, I designed a dual-conformation intramedullary device that deploys radially expandable Ti-6Al-4V flanges from inside the bone via a cannulated screw system compatible with existing Stryker surgical tools.</p>
+          <p>The full pipeline ran in SolidWorks (CAD) and Abaqus (nonlinear FEA) across three simulation steps: deployment, transverse loading, removal. Key design problem: previous iterations couldn't be removed after loading — plastic deformation pushed flanges against bone. My hinge joint design solved this: minimum clearance post-loading is 3.77 mm, identical to insertion.</p>
+          <div class="kpi-row">
+            <div class="kpi"><span class="kv">3.77 mm</span><span class="kl">Bone–device clearance post-loading</span></div>
+            <div class="kpi"><span class="kv">~27 Nm</span><span class="kl">Max deployment torque</span></div>
+            <div class="kpi"><span class="kv">15,578</span><span class="kl">Elements in converged mesh</span></div>
+            <div class="kpi"><span class="kv">Ti-6Al-4V</span><span class="kl">FDA-approved implant alloy</span></div>
+          </div>
+          <div class="proj-chips">
+            <span>SolidWorks</span><span>Abaqus FEA</span><span>Implant Design</span><span>Ti-6Al-4V / Steel 316L</span><span>Nonlinear Simulation</span><span>GD&amp;T</span><span>Surgeon Collaboration</span>
+          </div>
+        </div>
+
+        <div class="proj-visuals">
+          <div class="vis-hero">
+            <img src="images/femur/deployed_oriente.png" alt="Device deployed inside femur"/>
+            <div class="vis-cap">Deployed device inside fractured femur — SolidWorks</div>
+          </div>
+
+          <div class="vis-compare">
+            <div class="vis-citem">
+              <img src="images/femur/notdeployed.png" alt="Insertion conformation"/>
+              <div class="vis-cap">Conformation 1 — Insertion</div>
+            </div>
+            <div class="vis-arrow">→</div>
+            <div class="vis-citem">
+              <img src="images/femur/deployed.png" alt="Deployed conformation"/>
+              <div class="vis-cap">Conformation 2 — Deployed</div>
+            </div>
+          </div>
+
+          <div class="vis-full">
+            <img src="images/femur/cannulated-screw_copie.png" alt="Cannulated screw actuation mechanism"/>
+            <div class="vis-cap">Screw actuation: rotating translates bottom cylinder → deploys flanges radially</div>
+          </div>
+
+          <div class="vis-full">
+            <img src="images/femur/assembly-noted.png" alt="Annotated device assembly"/>
+            <div class="vis-cap">Device assembly — flexible guide, fixed/movable cylinders, Ti-6Al-4V flanges</div>
+          </div>
+
+          <div class="vis-section-label">Finite Element Analysis — Abaqus CAE 2023</div>
+
+          <div class="vis-grid-3">
+            <div class="vis-item">
+              <img src="images/femur/step1-flg.png" alt="FEA deployment"/>
+              <div class="vis-cap">Step 1 — Deployment stress</div>
+            </div>
+            <div class="vis-item">
+              <img src="images/femur/step2-flg.png" alt="FEA loading"/>
+              <div class="vis-cap">Step 2 — Transverse loading</div>
+            </div>
+            <div class="vis-item">
+              <img src="images/femur/step3-flg.png" alt="FEA removal"/>
+              <div class="vis-cap">Step 3 — Return to initial</div>
+            </div>
+          </div>
+
+          <div class="vis-full">
+            <img src="images/femur/PE-end-flg.png" alt="Plastic strain end state"/>
+            <div class="vis-cap">Plastic strain (Max. Principal) — localized at hinge, flanges return to insertion position</div>
+          </div>
+
+          <div class="vis-grid-2">
+            <div class="vis-item">
+              <img src="images/femur/reaction-force-noted.png" alt="Reaction force"/>
+              <div class="vis-cap">Reaction force across all simulation steps</div>
+            </div>
+            <div class="vis-item">
+              <img src="images/femur/compr_v4.png" alt="Force vs displacement"/>
+              <div class="vis-cap">Stabilization force vs. cylinder displacement — optimal [3.0–3.5 mm]</div>
+            </div>
+          </div>
+
+          <div class="vis-full">
+            <img src="images/femur/min-dist.png" alt="Min bone-device distance"/>
+            <div class="vis-cap">Min. bone–device distance after loading: 3.77 mm → safe removal confirmed</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj" id="npulse">
+      <div class="proj-header">
+        <div>
+          <span class="proj-tag">Biomedical Device · CTO · Open Source</span>
+          <h2 class="proj-title">Open-Source Myoelectric Arm Prosthesis</h2>
+          <p class="proj-org">EPFL N-Pulse · Co-Founder &amp; CTO · 2024–2025</p>
+        </div>
+        <span class="proj-year">2024–25</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Co-founded N-Pulse to build open-source biomedical technology at EPFL. As CTO, led three simultaneous teams (20 students across mechanical, electronics, and software) developing a 7-DoF myoelectric prosthetic arm controlled by a 16-channel EMG bracelet. Secured CHF 25,000 in funding and built org structure from scratch — grew to 40 active members.</p>
+          <p>Technical scope: EMG signal acquisition and processing for gesture classification, mechanical design of hand and wrist actuation system, computer vision pipeline for real-time control.</p>
+          <div class="kpi-row">
+            <div class="kpi"><span class="kv">7-DoF</span><span class="kl">Prosthetic arm</span></div>
+            <div class="kpi"><span class="kv">16-ch</span><span class="kl">EMG bracelet</span></div>
+            <div class="kpi"><span class="kv">CHF 25k</span><span class="kl">Funding</span></div>
+            <div class="kpi"><span class="kv">40</span><span class="kl">Members</span></div>
+          </div>
+          <div class="proj-chips">
+            <span>Prosthetics</span><span>EMG Processing</span><span>Mechanical Design</span><span>Computer Vision</span><span>Python</span><span>Open Source</span>
+          </div>
+        </div>
+        <div class="proj-visuals">
+          <div class="vis-placeholder"><span>📌 Add photo: prosthesis prototype</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj" id="organoid">
+      <div class="proj-header">
+        <div>
+          <span class="proj-tag">Robotics · Lab Automation · Cancer Research</span>
+          <h2 class="proj-title">Robotic Organoid Micromanipulation Platform</h2>
+          <p class="proj-org">MicroBioRobotic Systems Laboratory, EPFL · Prof. Sakar · 2024</p>
+        </div>
+        <span class="proj-year">2024</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>In a culture of human prostate cancer organoids, only certain ones develop a migratory phenotype — identifying them requires extracting individual organoids from matrigel for RNAseq. No robotic protocol existed for aspiration/injection in matrigel. I built one.</p>
+          <p>Developed control software and protocols for a SmarAct 4-DoF piezoelectric robot performing organoid aspiration and injection under an inverted microscope. Computer vision in Python (OpenCV) for detection, path planning in MATLAB. Characterized matrigel pressure profiles from scratch: aspiration requires −140 mbar, distinct from liquid culture.</p>
+          <div class="kpi-row">
+            <div class="kpi"><span class="kv">4-DoF</span><span class="kl">SmarAct piezo robot</span></div>
+            <div class="kpi"><span class="kv">−140 mbar</span><span class="kl">Aspiration in matrigel</span></div>
+            <div class="kpi"><span class="kv">First</span><span class="kl">Robotic protocol in matrigel</span></div>
+          </div>
+          <div class="proj-chips">
+            <span>SmarAct Robot</span><span>Python / OpenCV</span><span>MATLAB</span><span>Path Planning</span><span>Lab Automation</span><span>Microfluidics</span>
+          </div>
+        </div>
+        <div class="proj-visuals">
+          <div class="vis-placeholder"><span>📌 Add photo: SmarAct robot + microscope setup</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj" id="rover">
+      <div class="proj-header">
+        <div>
+          <span class="proj-tag">Space Robotics · Competition · 3 years</span>
+          <h2 class="proj-title">Martian Rover — EPFL Xplore</h2>
+          <p class="proj-org">EPFL Xplore · Structure Team Leader → R&amp;D Engineer · 2021–2024</p>
+        </div>
+        <span class="proj-year">2021–24</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Three years on EPFL's student space robotics team. As Structure Team Leader (2022–23), led 6 engineers designing the rover chassis: modular service module, differential joint for terrain stability, carbon tube linkages to steering and driving. Result: 3rd out of 60 at European Rover Challenge. Current Xplore rovers still use these mechanisms.</p>
+          <p>As R&amp;D Engineer (2023–24): built an open-source plastic recycling machine converting 3D-printed waste to industrial filament, including a custom inline diameter sensor at ±0.05 mm precision.</p>
+          <div class="kpi-row">
+            <div class="kpi"><span class="kv">3rd / 60</span><span class="kl">European Rover Challenge</span></div>
+            <div class="kpi"><span class="kv">±0.05 mm</span><span class="kl">Filament sensor precision</span></div>
+          </div>
+          <div class="proj-chips">
+            <span>Mechanical Design</span><span>Differential Mechanism</span><span>Carbon Fiber</span><span>3D Printing</span><span>Embedded Sensing</span><span>SolidWorks</span>
+          </div>
+        </div>
+        <div class="proj-visuals">
+          <div class="vis-placeholder"><span>📌 Add photo: rover at ERC competition</span></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-label">02 — Skills</div>
+    <div class="skills-grid">
+      <div class="skill-col"><h4>Design &amp; Engineering</h4><ul><li>SolidWorks, Fusion 360</li><li>2D Drawings &amp; GD&amp;T</li><li>Finite Element Analysis (Abaqus)</li><li>Structural &amp; dynamical systems</li><li>Materials selection</li><li>Lean / 5S</li></ul></div>
+      <div class="skill-col"><h4>Robotics &amp; Automation</h4><ul><li>Robot control &amp; path planning</li><li>Computer vision (OpenCV)</li><li>Mechanism design</li><li>Sensor integration</li><li>Arduino / embedded electronics</li></ul></div>
+      <div class="skill-col"><h4>Software</h4><ul><li>Python (OpenCV, NumPy, scikit-learn)</li><li>MATLAB</li><li>Machine Learning (PCA, k-means)</li><li>C (basics)</li></ul></div>
+      <div class="skill-col"><h4>Prototyping</h4><ul><li>FDM 3D printing</li><li>CO₂ laser cutting</li><li>Composite materials</li><li>Workshop machining</li></ul></div>
+      <div class="skill-col"><h4>Biomedical</h4><ul><li>EU MDR, ISO 13485, ISO 14971</li><li>FMEA</li><li>EMG &amp; EEG signal processing</li><li>Musculoskeletal biomechanics</li><li>Micro-nano robotics</li><li>Soft tissue mechanics</li></ul></div>
+      <div class="skill-col"><h4>Languages</h4><ul><li>French — Native</li><li>Spanish — Native</li><li>English — C2</li><li>German — A2</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-label">03 — About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a mechanical engineer from EPFL (MSc, Minor in Biomedical Technologies), currently in Mountain View as R&amp;D Engineer at Levita Magnetics on next-generation magnetically-controlled surgical tools.</p>
+        <p>My work sits at the intersection of mechanical design, robotics, and biology. I've designed implantable devices validated with surgeons, built robotic platforms for cancer research, led a 40-person student organization building open-source prosthetics, and competed internationally in space robotics. I learn fast and work best when constraints are real.</p>
+        <p>Looking for R&amp;D roles at startups building hardware that matters — surgical robotics, medtech, biomedical instrumentation. If you're working on something hard, let's talk.</p>
+        <div class="about-links">
+          <a href="mailto:alexiadelestapis@gmail.com" class="btn-solid">alexiadelestapis@gmail.com</a>
+          <a href="https://www.linkedin.com/in/alexia-de-lestapis-61ab93173" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="about-edu">
+        <h4>Education</h4>
+        <div class="edu-entry">
+          <div class="edu-school">EPFL — École Polytechnique Fédérale de Lausanne</div>
+          <div class="edu-deg">MSc Mechanical Engineering · Minor: Biomedical Technologies</div>
+          <div class="edu-year">2023 — Present</div>
+          <div class="edu-courses">Biomechanics · Micro-Nano Robotics · Machine Learning · Mechanobiology · Computational Motor Control · Composites</div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-school">EPFL</div>
+          <div class="edu-deg">BSc Mechanical Engineering · 5.01/6</div>
+          <div class="edu-year">2020 — 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Alexia de Lestapis · Mountain View, CA</span>
+    <div class="footer-links">
+      <a href="mailto:alexiadelestapis@gmail.com">alexiadelestapis@gmail.com</a>
+      <a href="https://www.linkedin.com/in/alexia-de-lestapis-61ab93173" target="_blank">LinkedIn</a>
+    </div>
+    <span class="footer-mono">GitHub Pages</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
