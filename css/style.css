@@ -1,15 +1,16 @@
 /* ── TOKENS ── */
 :root {
-  --bg: #0c0c0c;
-  --bg2: #141414;
-  --bg3: #1c1c1c;
+  --bg: #1e1e1e;
+  --bg2: #252525;
+  --bg3: #2c2c2c;
   --border: rgba(255,255,255,0.07);
-  --border2: rgba(255,255,255,0.14);
-  --text: #e4e2dd;
-  --muted: #888;
-  --dim: #555;
-  --accent: #b8ff00;
-  --accent2: rgba(184,255,0,0.1);
+  --border2: rgba(255,255,255,0.13);
+  --text: #edeae5;
+  --muted: #a8a39d;
+  --dim: #6b6560;
+  --accent: #4ECDC4;
+  --accent2: rgba(78,205,196,0.12);
+  --accent-hover: #72ddd7;
   --ff-serif: 'Instrument Serif', Georgia, serif;
   --ff-sans: 'IBM Plex Sans', system-ui, sans-serif;
   --ff-mono: 'IBM Plex Mono', 'Courier New', monospace;
@@ -41,7 +42,7 @@ p:last-child { margin-bottom: 0; }
 .nav-links a:hover { color: var(--text); }
 .nav-cta {
   font-family: var(--ff-mono); font-size: 0.72rem !important;
-  border: 1px solid rgba(184,255,0,0.35); color: var(--accent) !important;
+  border: 1px solid rgba(78,205,196,0.45); color: var(--accent) !important;
   padding: 0.3rem 0.8rem; border-radius: 3px; transition: background 0.2s !important;
 }
 .nav-cta:hover { background: var(--accent2) !important; }
@@ -51,6 +52,7 @@ p:last-child { margin-bottom: 0; }
   min-height: 100vh; display: flex; flex-direction: column;
   justify-content: center; padding: 9rem 2rem 5rem;
   max-width: var(--max); margin: 0 auto; position: relative;
+  background: radial-gradient(ellipse 60% 50% at 80% 20%, rgba(78,205,196,0.06) 0%, transparent 70%);
 }
 .hero-badge {
   display: flex; align-items: center; gap: 0.5rem;
@@ -80,8 +82,8 @@ p:last-child { margin-bottom: 0; }
 }
 .btn-ghost { border: 1px solid var(--border2); color: var(--muted); }
 .btn-ghost:hover { border-color: var(--text); color: var(--text); }
-.btn-solid { background: var(--accent); color: #0c0c0c; font-weight: 500; border: 1px solid var(--accent); }
-.btn-solid:hover { background: #c8ff33; }
+.btn-solid { background: var(--accent); color: #fff; font-weight: 500; border: 1px solid var(--accent); }
+.btn-solid:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
 
 .hero-stats { display: flex; align-items: center; gap: 0; flex-wrap: wrap; }
 .stat { padding: 0 2rem 0 0; }
@@ -117,7 +119,7 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: 0.08em; color: var(--dim); border: 1px solid var(--border2);
   padding: 0.2rem 0.6rem; border-radius: 2px; margin-bottom: 0.7rem;
 }
-.current-tag { border-color: rgba(184,255,0,0.4); color: var(--accent); }
+.current-tag { border-color: rgba(78,205,196,0.45); color: var(--accent); }
 .proj-title { font-family: var(--ff-serif); font-size: 1.7rem; line-height: 1.15; color: var(--text); margin-bottom: 0.4rem; }
 .proj-org { font-family: var(--ff-mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.03em; }
 .proj-year { font-family: var(--ff-mono); font-size: 0.7rem; color: var(--dim); white-space: nowrap; padding-top: 0.2rem; }
