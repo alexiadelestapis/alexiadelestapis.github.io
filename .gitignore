@@ -141,7 +141,5 @@ vite.config.ts.timestamp-*
 # Large media files
 *.mp4
 *.MP4
-*.jpeg
-*.JPEG
 *.pdf
 *.PDF
