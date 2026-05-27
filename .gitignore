@@ -139,7 +139,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .DS_Store
 # Large media files
-*.mp4
-*.MP4
+images/npulse/NPULSE_VIDEO.mp4
 *.pdf
 *.PDF
