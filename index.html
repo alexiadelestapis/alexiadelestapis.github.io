@@ -18,7 +18,7 @@
       <a href="#skills">Skills</a>
       <a href="#about">About</a>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀</button>
-      <a href="mailto:alexiadelestapis@gmail.com" class="nav-cta">Get in touch</a>
+      <a href="https://www.linkedin.com/in/alexia-de-lestapis-61ab93173" target="_blank" class="nav-cta">Get in touch</a>
     </div>
   </nav>
 
@@ -65,7 +65,6 @@
           </div>
           <div class="hero-actions">
             <a href="https://www.linkedin.com/in/alexia-de-lestapis-61ab93173" target="_blank" class="btn-ghost">LinkedIn ↗</a>
-            <a href="mailto:alexiadelestapis@gmail.com" class="btn-ghost">Email ↗</a>
             <a href="#projects" class="btn-solid">View Projects →</a>
           </div>
         </div>
@@ -120,7 +119,7 @@
             <div class="vis-cap">Current magnetic laparoscopic grasper — MARS system</div>
           </div>
           <div class="vis-full">
-            <div class="video-embed-wrap">
+            <div class="video-embed-wrap" style="max-width:75%;">
               <iframe src="https://www.youtube.com/embed/n4VfFBsyHlw?autoplay=1&mute=1&loop=1&playlist=n4VfFBsyHlw" title="Levita Magnetics — MARS system" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="vis-cap">Levita Magnetics — MARS magnetic surgical system</div>
@@ -438,8 +437,7 @@
       </div>
       <div class="proj-body">
         <div class="proj-text">
-          <p>Three years on EPFL's student space robotics team. As Structure Team Leader (2022–23), led 6 engineers designing the rover chassis: modular service module, differential joint for terrain stability, carbon tube linkages to steering and driving. Result: 3rd out of 60 at European Rover Challenge. Current Xplore rovers still use these mechanisms.</p>
-          <p>As R&amp;D Engineer (2023–24): built an open-source plastic recycling machine converting 3D-printed waste to industrial filament, including a custom inline diameter sensor at ±0.05 mm precision.</p>
+          <p>Three years on EPFL's student space robotics team. As Structure Team Leader, led 6 engineers designing the rover chassis: modular service module, differential joint for terrain stability, carbon tube linkages to steering and driving, as well as the successful integration of sensors, electronics and the rets of the subsystems such as the robotic arm. Result: 3rd out of 60 at European Rover Challenge. Current Xplore rovers still use these mechanisms.</p>
           <!-- <div class="kpi-row">
             <div class="kpi"><span class="kv">3rd / 60</span><span class="kl">European Rover Challenge</span></div>
             <div class="kpi"><span class="kv">±0.05 mm</span><span class="kl">Filament sensor precision</span></div>
@@ -449,7 +447,40 @@
           </div>
         </div>
         <div class="proj-visuals">
-          <div class="vis-placeholder"><span>📌 Add photo: rover at ERC competition</span></div>
+          <div class="vis-full">
+            <img src="images/xplore/Block diag.jpg" alt="Rover chassis block diagram"/>
+            <div class="vis-cap">Chassis architecture — block diagram</div>
+          </div>
+          <div class="vis-grid-2">
+            <div class="vis-item">
+              <img src="images/xplore/steering.jpg" alt="Steering mechanism"/>
+              <div class="vis-cap">Steering</div>
+            </div>
+            <div class="vis-item">
+              <img src="images/xplore/driving.jpg" alt="Driving mechanism"/>
+              <div class="vis-cap">Driving</div>
+            </div>
+          </div>
+          <div class="vis-grid-2">
+            <div class="vis-item">
+              <img src="images/xplore/suspensions.jpg" alt="Suspension system"/>
+              <div class="vis-cap">Suspensions</div>
+            </div>
+            <div class="vis-item">
+              <img src="images/xplore/wheels.jpg" alt="Wheel design"/>
+              <div class="vis-cap">Wheels</div>
+            </div>
+          </div>
+          <div class="vis-grid-2">
+            <div class="vis-item">
+              <img src="images/xplore/requirements.jpg" alt="System requirements"/>
+              <div class="vis-cap">Requirements</div>
+            </div>
+            <div class="vis-item">
+              <img src="images/xplore/service module.jpg" alt="Service module"/>
+              <div class="vis-cap">Service module</div>
+            </div>
+          </div>
         </div>
       </div>
     </article>
@@ -603,18 +634,13 @@
     <div class="skills-grid">
       <div class="skill-col">
         <h4>Design &amp; Engineering</h4>
-        <div class="skill-proj-links"><a href="#femur">↗ Femur device</a><a href="#filament-sensor">↗ Diam. sensor</a><a href="#wheels">↗ Rover wheels</a></div>
-        <ul><li>SolidWorks, Fusion 360</li><li>2D Drawings &amp; GD&amp;T</li><li>Finite Element Analysis (Abaqus)</li><li>Structural &amp; dynamical systems</li><li>Materials selection</li><li>Lean / 5S</li></ul>
+        <div class="skill-proj-links"><a href="#levita">↗ Levita</a><a href="#femur">↗ Femur device</a><a href="#filament-sensor">↗ Diam. sensor</a><a href="#wheels">↗ Rover wheels</a></div>
+        <ul><li>CAD: SolidWorks, Fusion 360</li><li>2D drawings &amp; GD&amp;T</li><li>FEA (Abaqus)</li><li>Magnetic simulation (ANSYS)</li><li>Structural &amp; dynamical physics modelling</li><li>Material selection</li></ul>
       </div>
       <div class="skill-col">
-        <h4>Robotics &amp; Automation</h4>
-        <div class="skill-proj-links"><a href="#organoid">↗ Organoid platform</a><a href="#filament-sensor">↗ Safety FSM</a></div>
-        <ul><li>Robot control &amp; path planning</li><li>Computer vision (OpenCV)</li><li>Mechanism design</li><li>Sensor integration</li><li>Arduino / embedded electronics</li></ul>
-      </div>
-      <div class="skill-col">
-        <h4>Software</h4>
-        <div class="skill-proj-links"><a href="#organoid">↗ Organoid platform</a></div>
-        <ul><li>Python (OpenCV, NumPy, scikit-learn)</li><li>MATLAB</li><li>Machine Learning (PCA, k-means)</li><li>C (basics)</li></ul>
+        <h4>Biomedical</h4>
+        <div class="skill-proj-links"><a href="#levita">↗ Levita</a><a href="#femur">↗ Femur device</a><a href="#npulse">↗ N-Pulse</a></div>
+        <ul><li>EU MDR, ISO 13485, ISO 14971</li><li>FMEA</li><li>EMG &amp; EEG signal processing</li><li>Musculoskeletal biomechanics</li><li>Micro-nano robotics</li><li>Soft tissue mechanics</li></ul>
       </div>
       <div class="skill-col">
         <h4>Prototyping</h4>
@@ -622,9 +648,9 @@
         <ul><li>FDM 3D printing</li><li>CO₂ laser cutting</li><li>Composite materials</li><li>Workshop machining</li></ul>
       </div>
       <div class="skill-col">
-        <h4>Biomedical</h4>
-        <div class="skill-proj-links"><a href="#femur">↗ Femur device</a><a href="#npulse">↗ N-Pulse</a></div>
-        <ul><li>EU MDR, ISO 13485, ISO 14971</li><li>FMEA</li><li>EMG &amp; EEG signal processing</li><li>Musculoskeletal biomechanics</li><li>Micro-nano robotics</li><li>Soft tissue mechanics</li></ul>
+        <h4>Robotics Software &amp; Automation</h4>
+        <div class="skill-proj-links"><a href="#organoid">↗ Organoid platform</a><a href="#filament-sensor">↗ Safety FSM</a></div>
+        <ul><li>Python / MATLAB</li><li>C (basics)</li><li>Computer vision (OpenCV)</li><li>Sensor integration</li><li>Robot control</li><li>Basic electronics</li></ul>
       </div>
       <div class="skill-col">
         <h4>Languages</h4>
@@ -657,7 +683,6 @@
   <footer class="footer">
     <span>Alexia de Lestapis · Mountain View, CA</span>
     <div class="footer-links">
-      <a href="mailto:alexiadelestapis@gmail.com">alexiadelestapis@gmail.com</a>
       <a href="https://www.linkedin.com/in/alexia-de-lestapis-61ab93173" target="_blank">LinkedIn</a>
     </div>
     <span class="footer-mono">GitHub Pages</span>
